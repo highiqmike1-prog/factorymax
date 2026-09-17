@@ -20,6 +20,8 @@ import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
 import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.network.FriendlyByteBuf;
 
+import net.mcreator.factorymax.init.FactorymaxModItems;
+
 import javax.annotation.Nullable;
 
 import java.util.concurrent.ConcurrentLinkedQueue;
@@ -46,6 +48,7 @@ public class FactorymaxMod {
 		// End of user code block mod constructor
 		NeoForge.EVENT_BUS.register(this);
 		modEventBus.addListener(this::registerNetworking);
+		FactorymaxModItems.REGISTRY.register(modEventBus);
 		// Start of user code block mod init
 		// End of user code block mod init
 	}

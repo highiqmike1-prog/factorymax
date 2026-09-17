@@ -1,14 +1,32 @@
 {
-  "mod_elements": [],
+  "mod_elements": [
+    {
+      "name": "Ironplate",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ironplate",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/factorymax/items/ironplate.json",
+          "src/main/resources/assets/factorymax/models/item/ironplate.json",
+          "src/main/java/net/mcreator/factorymax/item/IronplateItem.java"
+        ]
+      }
+    }
+  ],
   "variable_elements": [],
   "sound_elements": [],
   "tag_elements": {},
   "tab_element_order": {},
   "language_map": {
-    "en_us": {}
+    "en_us": {
+      "item.factorymax.ironplate": "Ironplate"
+    }
   },
   "metadata": {
     "files": [
+      "src/main/java/net/mcreator/factorymax/init/FactorymaxModItems.java",
       "src/main/resources/pack.mcmeta",
       "src/main/java/net/mcreator/factorymax/FactorymaxMod.java",
       "src/main/resources/META-INF/neoforge.mods.toml"

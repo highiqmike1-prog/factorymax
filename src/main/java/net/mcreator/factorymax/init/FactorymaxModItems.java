@@ -8,6 +8,7 @@ import net.neoforged.neoforge.registries.DeferredItem;
 
 import net.minecraft.world.item.Item;
 
+import net.mcreator.factorymax.item.IronplateItem;
 import net.mcreator.factorymax.FactorymaxMod;
 
 import java.util.function.Function;

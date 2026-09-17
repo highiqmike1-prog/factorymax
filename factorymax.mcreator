@@ -13,6 +13,20 @@
           "src/main/java/net/mcreator/factorymax/item/IronplateItem.java"
         ]
       }
+    },
+    {
+      "name": "Ironrod",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ironrod",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/factorymax/items/ironrod.json",
+          "src/main/java/net/mcreator/factorymax/item/IronrodItem.java",
+          "src/main/resources/assets/factorymax/models/item/ironrod.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -21,7 +35,8 @@
   "tab_element_order": {},
   "language_map": {
     "en_us": {
-      "item.factorymax.ironplate": "Ironplate"
+      "item.factorymax.ironplate": "Ironplate",
+      "item.factorymax.ironrod": "Ironrod"
     }
   },
   "metadata": {

@@ -16,8 +16,10 @@ import java.util.function.Function;
 public class FactorymaxModItems {
 	public static final DeferredRegister.Items REGISTRY = DeferredRegister.createItems(FactorymaxMod.MODID);
 	public static final DeferredItem<Item> IRONPLATE;
+	public static final DeferredItem<Item> IRONROD;
 	static {
 		IRONPLATE = register("ironplate", IronplateItem::new);
+		IRONROD = register("ironrod", IronrodItem::new);
 	}
 
 	// Start of user code block custom items

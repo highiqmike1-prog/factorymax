@@ -44,6 +44,20 @@
           "src/main/resources/assets/factorymax/models/item/ironframe.json"
         ]
       }
+    },
+    {
+      "name": "Ironfan",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ironfan",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/factorymax/models/item/ironfan.json",
+          "src/main/java/net/mcreator/factorymax/item/IronfanItem.java",
+          "src/main/resources/assets/factorymax/items/ironfan.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -54,7 +68,8 @@
     "en_us": {
       "item.factorymax.ironplate": "Ironplate",
       "item.factorymax.ironrod": "Ironrod",
-      "item.factorymax.ironframe": "Ironframe"
+      "item.factorymax.ironframe": "Ironframe",
+      "item.factorymax.ironfan": "Ironfan"
     }
   },
   "metadata": {

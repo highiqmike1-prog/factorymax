@@ -22,10 +22,12 @@ public class FactorymaxModItems {
 	public static final DeferredItem<Item> IRONPLATE;
 	public static final DeferredItem<Item> IRONROD;
 	public static final DeferredItem<Item> IRONFRAME;
+	public static final DeferredItem<Item> IRONFAN;
 	static {
 		IRONPLATE = register("ironplate", IronplateItem::new);
 		IRONROD = register("ironrod", IronrodItem::new);
 		IRONFRAME = block(FactorymaxModBlocks.IRONFRAME);
+		IRONFAN = register("ironfan", IronfanItem::new);
 	}
 
 	// Start of user code block custom items

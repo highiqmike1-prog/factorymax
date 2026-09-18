@@ -27,12 +27,14 @@ jobs:
 
       - name: Set up Gradle
         uses: gradle/actions/setup-gradle@v4
+        with:
+          cache-read-only: false
 
       - name: Make Gradle wrapper executable
         run: chmod +x gradlew
 
       - name: Build with Gradle
-        run: ./gradlew build
+        run: ./gradlew build --build-cache
 
   dependency-submission:
     if: github.event_name == 'push' && github.ref == 'refs/heads/master'

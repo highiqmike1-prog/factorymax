@@ -3,11 +3,10 @@
  */
 package net.mcreator.factorymax.init;
 
+import net.mcreator.factorymax.item.IronfanItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.neoforged.neoforge.registries.DeferredItem;
-import net.neoforged.neoforge.registries.DeferredHolder;
 
-import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.BlockItem;
 
@@ -26,7 +25,7 @@ public class FactorymaxModItems {
 	static {
 		IRONPLATE = register("ironplate", IronplateItem::new);
 		IRONROD = register("ironrod", IronrodItem::new);
-		IRONFRAME = block(FactorymaxModBlocks.IRONFRAME);
+		IRONFRAME = block();
 		IRONFAN = register("ironfan", IronfanItem::new);
 	}
 
@@ -36,11 +35,11 @@ public class FactorymaxModItems {
 		return REGISTRY.registerItem(name, supplier, Item.Properties::new);
 	}
 
-	private static DeferredItem<Item> block(DeferredHolder<Block, Block> block) {
-		return block(block, new Item.Properties());
+	private static DeferredItem<Item> block() {
+		return block(new Item.Properties());
 	}
 
-	private static DeferredItem<Item> block(DeferredHolder<Block, Block> block, Item.Properties properties) {
-		return REGISTRY.registerItem(block.getId().getPath(), prop -> new BlockItem(block.get(), prop), () -> properties);
+	private static DeferredItem<Item> block(Item.Properties properties) {
+		return REGISTRY.registerItem(FactorymaxModBlocks.IRONFRAME.getId().getPath(), prop -> new BlockItem(FactorymaxModBlocks.IRONFRAME.get(), prop), () -> properties);
 	}
 }

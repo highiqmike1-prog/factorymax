@@ -21,6 +21,7 @@ import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.factorymax.init.FactorymaxModItems;
+import net.mcreator.factorymax.init.FactorymaxModBlocks;
 
 import javax.annotation.Nullable;
 
@@ -48,6 +49,7 @@ public class FactorymaxMod {
 		// End of user code block mod constructor
 		NeoForge.EVENT_BUS.register(this);
 		modEventBus.addListener(this::registerNetworking);
+		FactorymaxModBlocks.REGISTRY.register(modEventBus);
 		FactorymaxModItems.REGISTRY.register(modEventBus);
 		// Start of user code block mod init
 		// End of user code block mod init

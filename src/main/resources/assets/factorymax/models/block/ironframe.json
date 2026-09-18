@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "factorymax:block/iron_frame_texture",
+    "particle": "factorymax:block/iron_frame_texture"
+  }
+}

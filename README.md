@@ -1,41 +1,39 @@
 # FactoryMax
 
-A Minecraft mod project in active development, inspired by the feel of large-scale industrial automation and GregTech-style progression.
+FactoryMax is a Minecraft technology and automation mod for NeoForge. It is designed around resource processing, industrial automation, scalable factories, and long-term progression.
 
-FactoryMax is being built as a NeoForge mod for Minecraft, with a focus on resource processing, automation, and scalable factory gameplay.
+> **Project status:** FactoryMax is in active early development. Features, mechanics, compatibility, and release plans may change.
 
-## Status
+## Features and Goals
 
-This project is currently in early development. The codebase is being structured as a real mod project, and the README is being expanded as the mod grows.
+- Industrial resource processing
+- Automation and factory-building systems
+- A technology-focused progression path
+- Scalable machines and production chains
+- Compatibility with NeoForge-based Minecraft modpacks
+- An extensible foundation for future content and optional add-ons
 
-## Project Goals
+## Development Status
 
-- Build a tech-mod progression loop
-- Add industrial resource processing and automation
-- Create a factory-oriented gameplay experience in Minecraft
-- Target NeoForge-compatible Minecraft versions
-- Keep the mod extensible and maintainable
-
-## Current State
-
-This repository contains a NeoForge mod setup using Gradle and MCreator-generated project structure. The project is not yet a finished release and should be considered a work in progress.
+This repository currently contains the NeoForge project setup and early FactoryMax development work. It is not yet a finished public release.
 
 ## Requirements
 
-- Java 25 (recommended for this project toolchain)
-- NeoForge-compatible Minecraft environment
-- Gradle wrapper included in the repo
+- Java 25
+- NeoForge `26.1.2.95` or a compatible version specified by the release
+- Minecraft `26.1.2` or the version specified by the release
+- The Gradle wrapper included in this repository
 
-## Getting Started
+## Building from Source
 
-### Clone the repository
+Clone the repository:
 
 ```bash
 git clone https://github.com/highiqmike1-prog/factorymax.git
 cd factorymax
 ```
 
-### Build the mod
+Build the mod:
 
 ```bash
 ./gradlew build
@@ -47,7 +45,7 @@ On Windows:
 gradlew.bat build
 ```
 
-The compiled mod artifact will be generated in the `build/libs` directory.
+The built artifact will be placed in `build/libs`.
 
 ## Project Structure
 
@@ -66,46 +64,47 @@ factorymax/
 ├── gradlew.bat
 ├── settings.gradle
 ├── factorymax.mcreator
-├── README.md
-└── .gitignore
+└── README.md
 ```
 
-## Development Notes
+## Add-ons and Community Content
 
-- The project uses Gradle with the NeoForge mod development plugin.
-- The mod ID is `factorymax`.
-- The project includes MCreator-generated source layout and configuration files.
-- The repository is intended to evolve into a custom tech mod rather than a purely generated template.
+FactoryMax may support community-made add-ons in the future. Add-ons are welcome only when they follow these rules:
 
-## Contributing
+- They must not include or redistribute FactoryMax source code, assets, binaries, textures, models, sounds, or other proprietary content without written permission.
+- They must not use the FactoryMax name, logo, or branding in a way that suggests official endorsement without permission.
+- They must clearly state that they are unofficial and are not created, approved, or supported by the FactoryMax author.
+- They must not bundle, re-upload, or mirror the FactoryMax mod itself.
+- Monetized add-ons require written permission before release.
 
-Contributions are welcome as the mod develops. If you want to help:
+The author may grant separate permissions for specific add-ons or integrations. Contact the author before publishing an add-on that depends on or interacts with FactoryMax.
 
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Open a pull request with a clear summary of what changed
+## Contributions
 
-## License
+FactoryMax is primarily maintained as a proprietary project. Pull requests and suggestions may be accepted at the author's discretion, but submitting a contribution does not grant permission to copy, redistribute, relicense, or commercially exploit the FactoryMax project.
 
-No license has been declared for this project yet. If you plan to distribute or use it publicly, please check the repository settings and add an appropriate license before release.
+Before contributing substantial work, please open an issue or contact the author to discuss the intended change and licensing terms.
+
+## Copyright and License
+
+Copyright © 2026 highiqmike1-prog. All rights reserved.
+
+**License identifier:** `Proprietary - All Rights Reserved`
+
+FactoryMax is **not open source** and is not licensed under the MIT, Apache-2.0, GPL, LGPL, or any other permissive or open-source license. No permission is granted to copy, modify, publish, distribute, sublicense, sell, monetize, re-upload, or create derivative works from this project except where the copyright holder gives written permission.
+
+You may view this repository on GitHub for personal evaluation and development reference. Viewing the code does not grant permission to redistribute it or use it in another project.
+
+The FactoryMax name, logo, original code, assets, data, documentation, and other project content remain the property of the copyright holder unless explicitly stated otherwise.
+
+> This notice is intended to communicate the project's licensing terms. It is not a substitute for legal advice. If you plan to monetize FactoryMax or enforce these rights, consult a qualified attorney about the appropriate license and distribution strategy.
 
 ## Contact
 
-For questions, suggestions, or collaboration:
+For licensing, add-on, commercial, or collaboration requests, open an issue in this repository or contact the project owner through GitHub:
 
-- GitHub: https://github.com/highiqmike1-prog/factorymax
+https://github.com/highiqmike1-prog/factorymax
 
-## Important Note
+## Important Notice
 
-This project is a work in progress. Features, compatibility, and project structure may change significantly as development continues.
-
----
-
-If you want, I can also make this README more polished for a public audience with:
-
-- a feature roadmap section
-- screenshots placeholder area
-- install instructions for Modrinth/CurseForge
-- a contributor section
-- badges and a better project header
+Unauthorized copying, redistribution, re-uploading, modification, monetization, or use of FactoryMax content in another project is prohibited unless explicitly authorized in writing by the copyright holder.
